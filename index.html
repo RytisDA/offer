@@ -463,7 +463,7 @@
     <div class="meta-grid" style="grid-template-columns: repeat(5,1fr)">
       <div class="meta-cell">
         <div class="meta-label">Rangovas</div>
-        <div class="meta-value" style="font-size:11px">Matas Kerdokas<br><span style="font-size:10px;color:var(--mist)">matas.kerdokas@gmail.com</span></div>
+        <div class="meta-value" style="font-size:11px">Matas Kerdokas<br><span style="font-size:10px;color:var(--mist)"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="660b07120715480d031402090d071526010b070f0a4805090b">[email&#160;protected]</a></span></div>
       </div>
       <div class="meta-cell">
         <div class="meta-label">Plotas</div>
@@ -548,7 +548,7 @@
       <div class="sig-role">Rangovas</div>
       <div class="sig-hint" style="color:var(--ink);font-size:12px;font-weight:500">Matas Kerdokas</div>
       <div class="sig-hint" style="margin-top:2px">Statybos Darbų Vykdytojas</div>
-      <div class="sig-hint" style="margin-top:4px">matas.kerdokas@gmail.com</div>
+      <div class="sig-hint" style="margin-top:4px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1479756075673a7f7166707b7f7567547379757d783a777b79">[email&#160;protected]</a></div>
       <div class="sig-line"></div>
       <div class="sig-hint">Parašas &nbsp;·&nbsp; Data</div>
     </div>
@@ -556,7 +556,7 @@
       <div class="sig-role">Užsakovas</div>
       <div class="sig-hint" style="color:var(--ink);font-size:12px;font-weight:500">Rytis Čekauskas</div>
       <div class="sig-hint" style="margin-top:2px">+370 629 30 125</div>
-      <div class="sig-hint" style="margin-top:4px">rytis.cekauskas@gmail.com</div>
+      <div class="sig-hint" style="margin-top:4px"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fe8c878a978dd09d9b959f8b8d959f8dbe99939f9792d09d9193">[email&#160;protected]</a></div>
       <div class="sig-line"></div>
       <div class="sig-hint">Parašas &nbsp;·&nbsp; Data</div>
     </div>
@@ -573,13 +573,13 @@
   <!-- FOOTER -->
   <div class="doc-footer">
     <span>Savanorių pr. 178F &nbsp;·&nbsp; Vilnius</span>
-    <span>Matas Kerdokas &nbsp;·&nbsp; matas.kerdokas@gmail.com</span>
+    <span>Matas Kerdokas &nbsp;·&nbsp; <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3d505c495c4e1356584f5952565c4e7d5a505c5451135e5250">[email&#160;protected]</a></span>
     <span>2025-03-17</span>
   </div>
 
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const VAT = 1.21;
 
 const GROUPS = {
@@ -594,10 +594,14 @@ const GROUPS = {
   "IX":   "IX. Vėdinimas ir rekuperacija",
   "X":    "X. Vonios įrengimas",
   "XI":   "XI. Apšvietimas",
-  "XII":  "XII. Virtuvė",
-  "XIII": "XIII. Durys ir įėjimo zona",
-  "XIV":  "XIV. Nenumatyti darbai – rezervas",
+  "XII":  "XII. Virtuvės santechnika ir elektra",
+  "XIII": "XIII. Lango angos didinimas",
+  "XIV":  "XIV. Durys ir įėjimo zona",
+  "XV":   "XV. Nenumatyti darbai – rezervas",
+  "OPT":  "OPTIONAL — Balkonas (atskiras etapas)",
 };
+
+const OPTIONAL_GROUPS = ["OPT"];
 
 const ITEMS = [
   ["I","1.1","Tikslūs matavimai ir kadastrinė inventorizacija","Esamos situacijos fiksavimas, faktinių matmenų suderinimas su brėžiniais",1,"kompl.",1500],
@@ -659,16 +663,25 @@ const ITEMS = [
   ["XI","11.4","Pakabinami šviestuvai – virtuvė + gyvenamoji zona (3 vnt.)","Design šviestuvai, elektros pajungimas",3,"vnt.",200],
   ["XI","11.5","Vonios ir techninės zonos apšvietimas","IP44 šviestuvai, veidrodžio LED apšvietimas, montavimas",1,"kompl.",420],
 
-  ["XII","12.1","Virtuvės baldai – loftinis dizainas (tamsios matinės durys)","Modulinė ~3,5 m virtuvė su pramoninio stiliaus furnitūra",1,"kompl.",3500],
-  ["XII","12.2","Stalviršis – betono imitacija arba juodas granitas","3,5 vain. m, pjovimas ir montavimas",3.5,"vain. m",400],
-  ["XII","12.3","Virtuvės prietaisų komplektas","Indukcinė kaitlentė, integruota orkaitė, indaplovė, gartraukis; montavimas",1,"kompl.",2500],
-  ["XII","12.4","Virtuvės baldų surinkimas ir montavimas","Baldų surinkimas, stalviršio montavimas, santechnikos ir elektros pajungimas",1,"kompl.",800],
+  ["XII","12.1","Virtuvės vandentiekio ir kanalizacijos pajungimas","Šalto/karšto vandens tiekimas iki kriauklės ir indaplovės, kanalizacija",1,"kompl.",550],
+  ["XII","12.2","Virtuvės elektros linijos (kaitlentė, orkaitė, gartraukis, indaplovė)","Atskiros apsaugotos linijos kiekvienam prietaisui, pajungimas",1,"kompl.",600],
+  ["XII","12.3","Virtuvės gartraukio pajungimas (elektra + ortakis)","Elektros linija, ortakio tiesimas iki išorės arba rekuperatoriaus",1,"kompl.",350],
 
-  ["XIII","13.1","Vidaus durys – 1 vnt. (tamsi matinė, plieninis rėmas)","Montavimas su apvadais",1,"vnt.",500],
-  ["XIII","13.2","Įėjimo zonos apdailos darbai","Grindų slenksčiai, sienos kampai, techninių zonų uždarymas GK plokšte",1,"kompl.",500],
+  ["XIII","13.1","Lango angos didinimas žemyn – konstrukcinis mazgas","Esamos angos išplėtimas, pjovimas, konstrukcinė sija / pertvara virš angos",1,"kompl.",2500],
+  ["XIII","13.2","Naujas pramoninis langas (gamyba + montavimas)","Didelio formato aliuminio rėmo langas su stiklo paketu (~3,0 × 1,8 m); gamyba, pristatymas, montavimas, hermetizavimas",1,"kompl.",4500],
+  ["XIII","13.3","Lango angos apdaila po didinimo","Sienų ataišymas aplink angą, tinkas, glaistymas; palangė viduje ir išorėje",1,"kompl.",800],
+  ["XIII","13.4","Statybos leidimo paruošimas (lango keitimas fasade)","Techninės dokumentacijos paruošimas, pateikimas savivaldybei",1,"kompl.",600],
 
-  ["XIV","14.1","Nenumatytų darbų ir medžiagų rezervas","Privalomas rezervas kainų svyravimams, papildomiems ardymo darbams ir nenumatytoms situacijoms",1,"kompl.",8000],
+  ["XIV","14.1","Vidaus durys – 1 vnt. (tamsi matinė, plieninis rėmas)","Montavimas su apvadais",1,"vnt.",500],
+  ["XIV","14.2","Įėjimo zonos apdailos darbai","Grindų slenksčiai, sienos kampai, techninių zonų uždarymas GK plokšte",1,"kompl.",500],
+
+  ["XV","15.1","Nenumatytų darbų ir medžiagų rezervas","Privalomas rezervas kainų svyravimams, papildomiems ardymo darbams ir nenumatytoms situacijoms",1,"kompl.",7000],
+
+  ["OPT","OPT.1","Metalinė balkono platforma (~4 m pločio)","Metalinė konstrukcija, tvirtinimas prie fasado, antikorozinis dažymas",1,"kompl.",3500],
+  ["OPT","OPT.2","Balkono turėklai (metalas / stiklas)","Metaliniai arba kombinuoti stiklo turėklai; montavimas",1,"kompl.",1500],
+  ["OPT","OPT.3","Balkono statybos leidimo paruošimas","Techninės dokumentacijos paruošimas, pateikimas savivaldybei",1,"kompl.",600],
 ];
+
 
 function fmt(n) {
   return n.toLocaleString('lt-LT', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + ' €';
@@ -681,31 +694,32 @@ function build() {
   const tbody = document.getElementById('table-body');
   let html = '';
   let totalNet = 0;
-  let currentGroup = null;
 
-  // Group totals
   const groupTotals = {};
   ITEMS.forEach(([g,,,,qty,,price]) => {
     groupTotals[g] = (groupTotals[g] || 0) + qty * price;
   });
 
-  // Collect groups in order
   const groupOrder = [...new Set(ITEMS.map(i => i[0]))];
+  const mainGroups = groupOrder.filter(g => !OPTIONAL_GROUPS.includes(g));
+  const optGroups  = groupOrder.filter(g =>  OPTIONAL_GROUPS.includes(g));
   let rowAlt = false;
 
-  groupOrder.forEach(grp => {
-    // Group header
-    html += `<tr class="group-row">
-      <td colspan="7"><span class="group-num">${grp}</span>${GROUPS[grp]}</td>
+  function renderGroup(grp, isOpt) {
+    const headerBg = isOpt ? 'background:#7D6608' : '';
+    html += `<tr class="group-row" style="${headerBg}">
+      <td colspan="7"><span class="group-num" style="${isOpt ? 'background:#C09B3A;color:#1C2B3A' : ''}">${grp}</span>${GROUPS[grp]}</td>
     </tr>`;
 
-    const grpItems = ITEMS.filter(i => i[0] === grp);
-    grpItems.forEach(([, nr, name, spec, qty, unit, price]) => {
+    ITEMS.filter(i => i[0] === grp).forEach(([, nr, name, spec, qty, unit, price]) => {
       const net = qty * price;
       const gross = net * VAT;
-      totalNet += net;
+      if (!isOpt) totalNet += net;
       const qtyStr = Number.isInteger(qty) ? qty : qty.toString().replace('.', ',');
-      html += `<tr class="item-row ${rowAlt ? 'alt' : ''}">
+      const rowBg = isOpt
+        ? (rowAlt ? 'background:#FFFDE7' : 'background:#FFFFF5')
+        : (rowAlt ? 'background:#F4F8FB' : 'background:#FFFFFF');
+      html += `<tr class="item-row" style="${rowBg}">
         <td class="item-nr">${nr.split('.')[0]}</td>
         <td class="item-nr" style="text-align:center">${nr}</td>
         <td><div class="item-name">${name}</div><div class="item-spec">${spec}</div></td>
@@ -717,15 +731,23 @@ function build() {
       rowAlt = !rowAlt;
     });
 
-    // Subtotal
     const sNet = groupTotals[grp];
     const sGross = sNet * VAT;
-    html += `<tr class="subtotal-row">
-      <td colspan="5"><span class="subtotal-label">Iš viso — ${GROUPS[grp]}</span></td>
-      <td class="subtotal-amt net">${fmtInt(sNet)}</td>
-      <td class="subtotal-amt gross">${fmtInt(sGross)}</td>
+    html += `<tr class="subtotal-row" style="${isOpt ? 'background:#FFF8E1' : ''}">
+      <td colspan="5"><span class="subtotal-label" style="${isOpt ? 'color:#7D6608' : ''}">${isOpt ? 'Orientacinė suma — ' : 'Iš viso — '}${GROUPS[grp]}</span></td>
+      <td class="subtotal-amt net" style="${isOpt ? 'color:#7D6608' : ''}">${fmtInt(sNet)}</td>
+      <td class="subtotal-amt gross" style="${isOpt ? 'color:#7D6608' : ''}">${fmtInt(sGross)}</td>
     </tr>`;
-  });
+  }
+
+  mainGroups.forEach(g => renderGroup(g, false));
+
+  if (optGroups.length) {
+    html += `<tr><td colspan="7" style="height:14px;background:#F5F0E0;border-top:2px dashed #B8913A;border-bottom:2px dashed #B8913A;text-align:center;font-family:'DM Mono',monospace;font-size:9px;letter-spacing:.14em;color:#7D6608;padding:5px 0">
+      ★ &nbsp; NEPRIVALOMI DARBAI — neįtraukti į bendrą sumą &nbsp; ★
+    </td></tr>`;
+    optGroups.forEach(g => renderGroup(g, true));
+  }
 
   tbody.innerHTML = html;
 
